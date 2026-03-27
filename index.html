@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ФСБ 2.0 • BLACK RUSSIA 2026 — Официальный сайт проекта. Лидер Mark Toyota">
+    <title>ФСБ 2.0 | BLACK RUSSIA 2026 — Mark Toyota</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+        
+        :root {
+            --space-black: #0a0a0a;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .title-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(rgba(10,10,10,0.85), rgba(10,10,10,0.95)), url('https://picsum.photos/id/1015/2000/1200') center/cover no-repeat;
+        }
+        
+        .rocket-bg {
+            animation: rocket-float 25s infinite linear;
+        }
+        
+        @keyframes rocket-float {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-100vh); }
+        }
+        
+        .nav-link {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .nav-link:hover {
+            color: #ff0000;
+            transform: scale(1.05);
+        }
+        
+        .section-header {
+            position: relative;
+        }
+        
+        .section-header::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(to right, #ff0000, #ffffff);
+        }
+    </style>
+</head>
+<body class="bg-[#0a0a0a] text-white overflow-x-hidden">
+    <!-- NAVBAR (как у SpaceX) -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-lg border-b border-white/10">
+        <div class="max-w-screen-2xl mx-auto px-8 py-5 flex items-center justify-between">
+            <!-- Логотип -->
+            <div class="flex items-center gap-8">
+                <a href="#" class="flex items-center gap-3">
+                    <span class="text-3xl font-bold title-font tracking-tighter">ФСБ</span>
+                    <span class="text-xl font-medium text-red-500">2.0</span>
+                </a>
+                <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                    <a href="#about" class="nav-link">О ПРОЕКТЕ</a>
+                    <a href="#leader" class="nav-link">MARK TOYOTA</a>
+                    <a href="#achievements" class="nav-link">ЧТО Я СДЕЛАЛ</a>
+                    <a href="#gallery" class="nav-link">ГАЛЕРЕЯ</a>
+                    <a href="#videos" class="nav-link">ВИДЕО</a>
+                    <a href="#news" class="nav-link">НОВОСТИ & RP</a>
+                </div>
+            </div>
+
+            <!-- Правая часть -->
+            <div class="flex items-center gap-6">
+                <div class="flex items-center bg-white/10 text-white text-xs font-medium px-4 py-2 rounded-full border border-white/20">
+                    <span class="text-green-400 mr-1">●</span>
+                    ONLINE 2026
+                </div>
+                <a href="#" onclick="alert('Toyota Is Benz — официальный слоган проекта ✅')" 
+                   class="flex items-center gap-2 bg-white text-black px-6 py-2.5 rounded-full font-semibold hover:bg-red-500 hover:text-white transition-all">
+                    <i class="fa-solid fa-rocket"></i>
+                    <span>Toyota Is Benz</span>
+                </a>
+                
+                <!-- Мобильное меню -->
+                <button onclick="toggleMobileMenu()" class="md:hidden text-2xl">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Мобильное меню -->
+        <div id="mobileMenu" class="hidden md:hidden bg-black/95 border-t border-white/10 px-8 py-6">
+            <div class="flex flex-col gap-6 text-lg">
+                <a href="#about" class="nav-link" onclick="toggleMobileMenu()">О ПРОЕКТЕ</a>
+                <a href="#leader" class="nav-link" onclick="toggleMobileMenu()">MARK TOYOTA</a>
+                <a href="#achievements" class="nav-link" onclick="toggleMobileMenu()">ЧТО Я СДЕЛАЛ</a>
+                <a href="#gallery" class="nav-link" onclick="toggleMobileMenu()">ГАЛЕРЕЯ</a>
+                <a href="#videos" class="nav-link" onclick="toggleMobileMenu()">ВИДЕО</a>
+                <a href="#news" class="nav-link" onclick="toggleMobileMenu()">НОВОСТИ & RP</a>
+                <div class="pt-6 border-t border-white/20 text-center">
+                    <span class="text-red-500 font-bold text-xl">Toyota Is Benz ✅</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="hero-bg min-h-screen flex items-center pt-20 relative overflow-hidden">
+        <div class="max-w-screen-2xl mx-auto px-8 grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-8">
+                <div class="inline-flex items-center gap-2 bg-white/10 px-6 py-2 rounded-3xl text-sm font-medium">
+                    <span class="text-red-500">•</span>
+                    ФСБ 2.0 • BLACK RUSSIA 2026
+                </div>
+                
+                <h1 class="title-font text-7xl md:text-8xl font-bold leading-none tracking-tighter">
+                    MARK TOYOTA<br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-red-500">ЛУЧШИЙ ЛИДЕР ФСБ</span>
+                </h1>
+                
+                <p class="text-3xl text-gray-300 max-w-lg">
+                    Май 2026 года. Новый этап. Новые возможности.
+                </p>
+                
+                <div class="flex items-center gap-4">
+                    <a href="#leader" 
+                       class="bg-red-600 hover:bg-red-700 px-10 py-5 rounded-2xl text-xl font-semibold inline-flex items-center gap-3 transition-all">
+                        <i class="fa-solid fa-user-secret"></i>
+                        Познакомиться с Mark Toyota
+                    </a>
+                    <button onclick="document.getElementById('videoModal').classList.remove('hidden')" 
+                            class="border border-white/50 hover:border-white px-10 py-5 rounded-2xl text-xl font-medium inline-flex items-center gap-3 transition-all">
+                        <i class="fa-solid fa-play"></i>
+                        Смотреть презентацию
+                    </button>
+                </div>
+                
+                <div class="flex items-center gap-8 text-sm">
+                    <div>
+                        <div class="text-red-500 font-medium">Toyota Is Benz</div>
+                        <div class="text-gray-400">Официальный слоган проекта</div>
+                    </div>
+                    <div class="h-10 w-px bg-white/20"></div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-check-circle text-green-400"></i>
+                        <span class="font-medium">Mark Toyota — это я</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Правая часть hero (ракета + текст) -->
+            <div class="relative hidden md:block">
+                <div class="absolute -right-20 top-10 text-[180px] font-black title-font text-white/5 rotate-12 select-none">2026</div>
+                <div class="bg-black/70 backdrop-blur-xl border border-white/10 rounded-3xl p-8 max-w-xs ml-auto">
+                    <div class="flex justify-between items-center mb-6">
+                        <span class="text-red-500 font-bold">LIVE</span>
+                        <span class="text-xs bg-green-500/20 text-green-400 px-4 py-1 rounded-full">ФСБ 2.0 ЗАПУСК</span>
+                    </div>
+                    <h2 class="text-4xl font-bold title-font mb-2">Mark Toyota</h2>
+                    <p class="text-gray-400 mb-6">становится лучшим лидером ФСБ на проекте BLACK RUSSIA</p>
+                    <div class="text-6xl font-black text-transparent bg-clip-text bg-gradient-to-b from-white to-red-500">BENZ</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Плавающая ракета -->
+        <div class="absolute bottom-0 right-10 hidden xl:block text-white/20 text-[300px] rocket-bg">
+            <i class="fa-solid fa-rocket"></i>
+        </div>
+    </header>
+
+    <!-- MARK TOYOTA — ЛИДЕР -->
+    <section id="leader" class="py-24 border-t border-white/10">
+        <div class="max-w-screen-2xl mx-auto px-8">
+            <div class="grid md:grid-cols-12 gap-16 items-center">
+                <div class="md:col-span-5">
+                    <div class="sticky top-28">
+                        <span class="text-red-500 text-sm font-bold tracking-widest">ЛИДЕР • 2026</span>
+                        <h2 class="title-font text-6xl font-bold mt-4 mb-6">Mark Toyota</h2>
+                        <p class="text-3xl text-gray-300">Это я. Лучший лидер ФСБ на проекте BLACK RUSSIA.</p>
+                        <div class="mt-12 flex gap-6">
+                            <div class="bg-white/5 px-6 py-4 rounded-2xl flex-1">
+                                <div class="text-4xl font-bold">Май 2026</div>
+                                <div class="text-sm text-gray-400">Старт лидерства</div>
+                            </div>
+                            <div class="bg-white/5 px-6 py-4 rounded-2xl flex-1">
+                                <div class="text-4xl font-bold">Toyota Is Benz</div>
+                                <div class="text-sm text-gray-400">Официальный статус</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:col-span-7 bg-white/5 border border-white/10 rounded-3xl p-12">
+                    <h3 class="text-2xl mb-8 flex items-center gap-4">
+                        <span class="text-red-500">★</span>
+                        Mark Toyota — это я
+                    </h3>
+                    <ul class="space-y-8 text-lg">
+                        <li class="flex gap-6">
+                            <span class="font-mono text-red-500 text-3xl">01</span>
+                            <div>Создал и запустил проект BLACK RUSSIA 2.0</div>
+                        </li>
+                        <li class="flex gap-6">
+                            <span class="font-mono text-red-500 text-3xl">02</span>
+                            <div>Разработал концепцию ФСБ 2.0 с новыми темами и RP-ситуациями</div>
+                        </li>
+                        <li class="flex gap-6">
+                            <span class="font-mono text-red-500 text-3xl">03</span>
+                            <div>Сделал сайт в стиле SpaceX для проекта</div>
+                        </li>
+                        <li class="flex gap-6">
+                            <span class="font-mono text-red-500 text-3xl">04</span>
+                            <div>Подготовил галерею нейросетевых фото и видео</div>
+                        </li>
+                        <li class="flex gap-6">
+                            <span class="font-mono text-red-500 text-3xl">05</span>
+                            <div>Собираю команду и запускаю новые возможности в мае 2026</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ЧТО Я СДЕЛАЛ (ACHIEVEMENTS) -->
+    <section id="achievements" class="py-24 bg-black/50 border-t border-white/10">
+        <div class="max-w-screen-2xl mx-auto px-8">
+            <h2 class="section-header text-5xl font-bold title-font mb-16">Что я сделал</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white/5 rounded-3xl p-8 hover:bg-white/10 transition-all">
+                    <h3 class="text-2xl font-semibold mb-4">Запустил ФСБ 2.0</h3>
+                    <p class="text-gray-400">Полностью новый этап проекта с современным сайтом и функционалом</p>
+                    <div class="text-xs text-red-500 mt-10">Mark Toyota • 2026</div>
+                </div>
+                <div class="bg-white/5 rounded-3xl p-8 hover:bg-white/10 transition-all">
+                    <h3 class="text-2xl font-semibold mb-4">Создал нейросетевую галерею</h3>
+                    <p class="text-gray-400">Тысячи фото и видео, которые генерирует ИИ специально под проект</p>
+                    <div class="text-xs text-red-500 mt-10">Mark Toyota • 2026</div>
+                </div>
+                <div class="bg-white/5 rounded-3xl p-8 hover:bg-white/10 transition-all">
+                    <h3 class="text-2xl font-semibold mb-4">Сделал сайт как у SpaceX</h3>
+                    <p class="text-gray-400">Полностью бесплатный, быстрый и красивый — как у Илона</p>
+                    <div class="text-xs text-red-500 mt-10">Mark Toyota • 2026</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="py-24 border-t border-white/10">
+        <div class="max-w-screen-2xl mx-auto px-8">
+            <h2 class="section-header text-5xl font-bold title-font mb-12">Галерея нейросетевых изображений</h2>
+            <p class="text-gray-400 mb-12">Генерируй сколько угодно фото прямо в чате с Grok Imagine</p>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <!-- Здесь можно заменять на свои сгенерированные изображения -->
+                <div class="aspect-square bg-white/5 rounded-3xl overflow-hidden relative group">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
+                        <div>
+                            <div class="text-sm">Mark Toyota в офисе SpaceX</div>
+                            <div class="text-xs text-red-500">Toyota Is Benz</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Повторите блоки сколько угодно -->
+                <div class="aspect-square bg-white/5 rounded-3xl overflow-hidden relative group">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
+                        <div>
+                            <div class="text-sm">ФСБ 2.0 презентация</div>
+                            <div class="text-xs text-red-500">Mark Toyota • 2026</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="aspect-square bg-white/5 rounded-3xl overflow-hidden relative group">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
+                        <div>
+                            <div class="text-sm">Ракета над зданием ФСБ</div>
+                            <div class="text-xs text-red-500">Toyota Is Benz</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="aspect-square bg-white/5 rounded-3xl overflow-hidden relative group">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
+                        <div>
+                            <div class="text-sm">Mark Toyota — лидер</div>
+                            <div class="text-xs text-red-500">BLACK RUSSIA</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VIDEOS -->
+    <section id="videos" class="py-24 bg-black/50 border-t border-white/10">
+        <div class="max-w-screen-2xl mx-auto px-8">
+            <h2 class="section-header text-5xl font-bold title-font mb-12">Видео проекта</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div onclick="alert('Здесь можно вставить YouTube / Runway / Pika видео')" 
+                     class="bg-white/5 rounded-3xl p-8 flex flex-col justify-between cursor-pointer hover:scale-105 transition-all">
+                    <div class="text-3xl">Презентация ФСБ 2.0</div>
+                    <div class="flex justify-between items-end">
+                        <span class="text-red-500">3:42</span>
+                        <span class="text-xs">Mark Toyota</span>
+                    </div>
+                </div>
+                <div onclick="alert('Здесь можно вставить YouTube / Runway / Pika видео')" 
+                     class="bg-white/5 rounded-3xl p-8 flex flex-col justify-between cursor-pointer hover:scale-105 transition-all">
+                    <div class="text-3xl">Запуск BLACK RUSSIA 2026</div>
+                    <div class="flex justify-between items-end">
+                        <span class="text-red-500">1:15</span>
+                        <span class="text-xs">Toyota Is Benz</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWS & RP -->
+    <section id="news" class="py-24 border-t border-white/10">
+        <div class="max-w-screen-2xl mx-auto px-8">
+            <h2 class="section-header text-5xl font-bold title-font mb-12">Новости и RP-ситуации</h2>
+            <div class="space-y-6">
+                <div class="flex gap-6 border border-white/10 rounded-3xl p-8">
+                    <div class="text-xs text-gray-400 w-24">27 марта 2026</div>
+                    <div class="flex-1">
+                        <div class="font-semibold">Mark Toyota представил новую стратегию ФСБ 2.0</div>
+                        <p class="text-gray-400">Новые темы, сайт, нейросетевые генерации и многое другое</p>
+                    </div>
+                    <div class="text-red-500 text-xs font-medium">Toyota Is Benz</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black border-t border-white/10 py-20">
+        <div class="max-w-screen-2xl mx-auto px-8">
+            <div class="flex flex-wrap justify-between gap-12">
+                <div>
+                    <div class="flex items-center gap-3 text-3xl font-bold title-font">
+                        ФСБ <span class="text-red-500">2.0</span>
+                    </div>
+                    <div class="text-sm text-gray-400 mt-2">BLACK RUSSIA 2026</div>
+                    <div class="mt-8 text-xs text-gray-400">Сайт создан Mark Toyota • Всё бесплатно</div>
+                </div>
+                
+                <div class="grid grid-cols-3 gap-12 text-sm">
+                    <div>
+                        <div class="font-medium mb-4">PROJECT</div>
+                        <div class="space-y-3">
+                            <a href="#" class="block text-gray-400 hover:text-white">ФСБ 2.0</a>
+                            <a href="#" class="block text-gray-400 hover:text-white">BLACK RUSSIA</a>
+                            <a href="#" class="block text-gray-400 hover:text-white">Toyota Is Benz</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="font-medium mb-4">MARK TOYOTA</div>
+                        <div class="space-y-3">
+                            <a href="#" class="block text-gray-400 hover:text-white">Лидер</a>
+                            <a href="#" class="block text-gray-400 hover:text-white">Что я сделал</a>
+                            <a href="#" class="block text-gray-400 hover:text-white">Контакты</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="font-medium mb-4">Ссылки</div>
+                        <div class="space-y-3">
+                            <a href="https://x.com" class="block text-gray-400 hover:text-white">SpaceX</a>
+                            <a href="https://tesla.com" class="block text-gray-400 hover:text-white">Tesla</a>
+                            <a href="#" class="block text-gray-400 hover:text-white">Grok Imagine</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center text-xs text-gray-500 mt-20">
+                © 2026 Mark Toyota • Все права защищены • Сайт сделан полностью бесплатно в стиле SpaceX
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно видео -->
+    <div id="videoModal" onclick="if(event.target.id === 'videoModal') this.classList.add('hidden')" 
+         class="hidden fixed inset-0 bg-black/90 z-[9999] flex items-center justify-center">
+        <div class="max-w-4xl w-full mx-4 bg-black rounded-3xl overflow-hidden">
+            <div class="aspect-video bg-gray-900 flex items-center justify-center">
+                <div class="text-center">
+                    <i class="fa-solid fa-play text-8xl text-red-500 mb-6"></i>
+                    <p class="text-3xl">Здесь будет видео презентации Mark Toyota</p>
+                    <p class="text-gray-400 mt-4">Вставь ссылку на YouTube / Runway / Pika</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Tailwind script уже подключён
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+        
+        // Простая анимация появления при скролле
+        window.addEventListener('scroll', () => {
+            document.querySelectorAll('.section-header').forEach(el => {
+                if (el.getBoundingClientRect().top < window.innerHeight * 0.8) {
+                    el.style.opacity = '1';
+                }
+            });
+        });
+        
+        console.log('%c✅ Сайт ФСБ 2.0 BLACK RUSSIA успешно загружен. Mark Toyota — лидер 2026. Toyota Is Benz.', 'color: #ff0000; font-size: 14px;');
+    </script>
+</body>
+</html>
